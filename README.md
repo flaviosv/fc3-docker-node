@@ -1,1 +1,1 @@
-# fc3-docker-node
+```docker-compose up```
