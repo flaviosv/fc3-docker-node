@@ -3,7 +3,7 @@ services:
     build:
       context: node
     container_name: app
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s sh -c "npm start && nodemon index.js";
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s sh -c "npm install && npm start && nodemon index.js";
     environment:
       - PORT=8080
     networks:
